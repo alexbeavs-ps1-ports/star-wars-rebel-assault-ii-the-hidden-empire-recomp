@@ -1,0 +1,107 @@
+{
+  "format_version": 1,
+  "id": "star-wars-rebel-assault-ii-the-hidden-empire-psx",
+  "name": "Star Wars - Rebel Assault II - The Hidden Empire",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "star-wars-rebel-assault-ii-the-hidden-empire-recomp",
+  "rom_identity": {
+    "crc32": [
+      "8835e86a",
+      "5c15c611"
+    ],
+    "md5": [
+      "ec2a72b90d0f1c3bd41f1c8e549281b8",
+      "ff868e87682dbfe7ce2df0a0459060b1"
+    ],
+    "sha1": [
+      "0c92021200f63a290f700747f17dec0938ebd3ec",
+      "0de98006ebf0b28d0890b28445ab34328c887a71"
+    ],
+    "disc_serials": [
+      "SLES-00654",
+      "SLES-10654"
+    ],
+    "sizes": [
+      739833360,
+      733838112
+    ],
+    "filenames": [
+      "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).cue",
+      "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).bin",
+      "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 2).cue",
+      "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 2).bin"
+    ],
+    "track_counts": [
+      1,
+      1
+    ],
+    "disc_fps": [
+      "130005fc8698253f6a9769692cbbf236f582deeb1360b2a75988d9bacad6fe77",
+      "a55dc75279bb9effef4c17911a7e468159036771aa488a3cc16686e822213ab3"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH5552.BIN",
+    "profile": "SCPH5552",
+    "crc32": [
+      "d786f0b9"
+    ],
+    "md5": [
+      "32736f17079d0b2b7024407c39bd3050"
+    ],
+    "sha1": [
+      "f6bc2d1f5eb6593de7d089c425ac681d6fffd3f0"
+    ],
+    "sha256": [
+      "1faaa18fa820a0225e488d9f086296b8e6c46df739666093987ff7d8fd352c09"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH5552.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/star-wars-rebel-assault-ii-the-hidden-empire-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "star-wars-rebel-assault-ii-the-hidden-empire-*-windows-x64.zip",
+      "linux-x64": "star-wars-rebel-assault-ii-the-hidden-empire-*-linux-x64.zip",
+      "macos-arm64": "star-wars-rebel-assault-ii-the-hidden-empire-*-macos-arm64.zip",
+      "macos-x64": "star-wars-rebel-assault-ii-the-hidden-empire-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "star_wars_rebel_assault_ii_the_hidden_empire.exe",
+    "linux": "star_wars_rebel_assault_ii_the_hidden_empire",
+    "macos": "star_wars_rebel_assault_ii_the_hidden_empire"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/star-wars-rebel-assault-ii-the-hidden-empire-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}

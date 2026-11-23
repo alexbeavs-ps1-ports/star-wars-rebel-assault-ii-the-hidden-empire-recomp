@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Star Wars - Rebel Assault II - The Hidden Empire",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "star-wars-rebel-assault-ii-the-hidden-empire-recomp",
+  "original": {
+    "region": "Europe",
+    "serial": "SLES-00654"
+  }
+}

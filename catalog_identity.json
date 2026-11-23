@@ -1,0 +1,75 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Star Wars - Rebel Assault II - The Hidden Empire",
+    "id": "SLES-00654",
+    "boot_exe": "SLES_006.54"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).cue",
+    "bin_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).bin",
+    "track_counts": [
+      1,
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 739833360,
+      "md5": "ec2a72b90d0f1c3bd41f1c8e549281b8",
+      "sha1": "0c92021200f63a290f700747f17dec0938ebd3ec",
+      "crc32": "8835e86a"
+    },
+    "disc_fp": "130005fc8698253f6a9769692cbbf236f582deeb1360b2a75988d9bacad6fe77",
+    "discs": [
+      {
+        "index": 1,
+        "cue_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).cue",
+        "bin_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 1).bin",
+        "size": 739833360,
+        "md5": "ec2a72b90d0f1c3bd41f1c8e549281b8",
+        "sha1": "0c92021200f63a290f700747f17dec0938ebd3ec",
+        "crc32": "8835e86a",
+        "track_count": 1,
+        "serial": "SLES-00654",
+        "disc_fp": "130005fc8698253f6a9769692cbbf236f582deeb1360b2a75988d9bacad6fe77"
+      },
+      {
+        "index": 2,
+        "cue_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 2).cue",
+        "bin_name": "Star Wars - Rebel Assault II - The Hidden Empire (Europe) (Disc 2).bin",
+        "size": 733838112,
+        "md5": "ff868e87682dbfe7ce2df0a0459060b1",
+        "sha1": "0de98006ebf0b28d0890b28445ab34328c887a71",
+        "crc32": "5c15c611",
+        "track_count": 1,
+        "serial": "SLES-10654",
+        "disc_fp": "a55dc75279bb9effef4c17911a7e468159036771aa488a3cc16686e822213ab3"
+      }
+    ]
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80090A68",
+    "text_size": "0x000A9800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 810,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
